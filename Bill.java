@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Bill {
     private int billId;
     private String billNumber;
-    private Date billDate;
+    private LocalDateTime billDate;
     private ArrayList<BillItem> billItems;
     private double totalAmount;
     private int sectorId;
@@ -12,7 +12,7 @@ public class Bill {
     public Bill() {
         
     }
-    public Bill(int billId, String billNumber, Date billDate, ArrayList<BillItem> billItems, double totalAmount, int sectorId) {
+    public Bill(int billId, String billNumber, LocalDateTime billDate, ArrayList<BillItem> billItems, double totalAmount, int sectorId) {
         this.billId = billId;
         this.billNumber = billNumber;
         this.billDate = billDate;
@@ -49,7 +49,9 @@ public class Bill {
     public void setBillItems(ArrayList<BillItem> billItems) {
         this.billItems = billItems;
     }
-
+    public LocalDate getDate() {//ADDED THE GETTER FOR DATE
+        return this.dateTime.toLocalDate(); 
+    }
     public int getBillId() {
         return billId;
     }
