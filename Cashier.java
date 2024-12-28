@@ -19,7 +19,7 @@ public class Cashier extends User{
         Date today=new Date();
         for (Bill bill:bills)
         {
-            if (isSameDay(bill.getDateTime(),today))//MAYBE THIS NEEDS TO BE CHAGED TO getDate() only
+            if (isSameDay(bill.getBillDate(),today))
             {
                 todayBills.add(bill);
             }
