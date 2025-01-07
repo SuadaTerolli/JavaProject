@@ -6,7 +6,7 @@ public class BillItem {
 
     public BillItem(){
 
-    }
+    }//COMMENT SUADA
     public BillItem(Item item, int itemQuantity){
         this.item=item;
         this.itemQuantity=itemQuantity;
