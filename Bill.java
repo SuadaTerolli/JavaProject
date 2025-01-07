@@ -11,7 +11,7 @@ public class Bill {
 
     public Bill() {
         
-    }
+    }//ALESIA_COMMENT
     public Bill(int billId, String billNumber, Date billDate, ArrayList<BillItem> billItems, double totalAmount, int sectorId) {
         this.billId = billId;
         this.billNumber = billNumber;
