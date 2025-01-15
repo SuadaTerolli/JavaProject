@@ -1,3 +1,5 @@
+package com.electronicstore.view;
+
 import javafx.application.Application;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleStringProperty;
