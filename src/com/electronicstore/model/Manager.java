@@ -9,9 +9,9 @@ public class Manager extends User{
     private ArrayList<Supplier> suppliers;
     private ArrayList<Category> categories;
 
-    public Manager(int id, String name, String username, Date date_of_birth, int phoneNumber, String email, int salary, String password, ArrayList<Sector> sector,ArrayList<Supplier> suppliers,ArrayList<Category>categories)
+    public Manager(int id, String name, String username, Date date_of_birth, int phoneNumber, String email, int salary, String password, String access_level, ArrayList<Sector> sector,ArrayList<Supplier> suppliers,ArrayList<Category>categories)
     {
-        super(id,name,username,date_of_birth,phoneNumber,email,salary,password);
+        super(id,name,username,date_of_birth,phoneNumber,email,salary,password,access_level);
         this.sectors=sectors;
         this.suppliers=suppliers;
         this.categories=categories;

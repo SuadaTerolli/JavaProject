@@ -5,28 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f0495cd-ea4a-4177-9a9e-b743b6411280" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/Sector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/Supplier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/Bill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sales/BillItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/untitled.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/Cashier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/Manager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/User.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/electronicstore/model/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/CashierItemNotInStockView.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,18 +30,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.LogIn.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging Branch__Alesia&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alesia/Desktop/Java Project/Java Project/User/JavaProject/lib/lib&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LogIn.executor": "Run",
+    "Maven.ElectronicStore [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Branch__Alesia",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Alesia/Desktop/Java Project/Java Project/User/JavaProject/lib/lib",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Alesia\Desktop\Java Project\Java Project\User\JavaProject\inventory" />
