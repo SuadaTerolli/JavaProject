@@ -6,7 +6,6 @@ import java.util.Date;
 public class Cashier extends User{
     private Sector sector;
     private ArrayList<Bill> bills; //LIKE THIS????
-
     public Cashier(int id, String name, String username, Date date_of_birth, int phoneNumber, String email, double salary, String access_level,String password,Sector sector)
     {
         super(id,name,username,date_of_birth,phoneNumber,email,salary,password,access_level);

@@ -5,29 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f0495cd-ea4a-4177-9a9e-b743b6411280" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/controller/LogInController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/util/SupplierBinaryConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/CashierCreateBillView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/CashierItemNotInStockView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/CashierView$Performance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/CashierView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/ManagerCreateCategoryView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/ManagerCreateItemView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/ManagerSuppliersView$Supplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/ManagerSuppliersView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/ManagerViewBills$Bill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/ManagerViewBills.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/CashierCreateBillView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/electronicstore/view/CashierCreateBillView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/CashierItemNotInStockView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/electronicstore/view/CashierItemNotInStockView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/CashierView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/electronicstore/view/CashierView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/ManagerCreateCategoryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/electronicstore/view/ManagerCreateCategoryView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/ManagerCreateItemView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/electronicstore/view/ManagerCreateItemView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/ManagerSuppliersView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/electronicstore/view/ManagerSuppliersView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/ManagerViewBills.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/electronicstore/view/ManagerViewBills.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ElectronicStore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/model/Administrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/model/Bill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/model/BillItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/model/Cashier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/model/CashierPerformance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/model/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/model/FinancialSummary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/model/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/model/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/model/Sector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/model/Supplier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/AdministratorStatistics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/AdministratorView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/CashierCreateBillView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/CashierItemNotInStockView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/CashierView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/LogIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/ManagerCreateCategoryView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/ManagerCreateItemView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/ManagerSuppliersView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/electronicstore/view/ManagerViewBills.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/Administrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/Cashier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/CashierPerformance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/CashierPerformance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/FinancialSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/FinancialSummary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/AdministratorStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/AdministratorStatistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/AdministratorView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/AdministratorView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/CashierCreateBillView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/CashierCreateBillView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/CashierView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/CashierView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/ManagerCreateCategoryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/ManagerCreateCategoryView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/ManagerCreateItemView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/ManagerCreateItemView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/ManagerSuppliersView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/ManagerSuppliersView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/ManagerViewBills.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/electronicstore/view/ManagerViewBills.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/files/bills.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/files/bills.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/files/items.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/files/items.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/files/user.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/files/user.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,14 +84,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.LogIn.executor": "Run",
+    "Application.SupplierBinaryConverter.executor": "Run",
     "Application.com.electronicstore.view.LogIn.executor": "Run",
+    "Maven.ElectronicStore [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Alesia/Desktop/Java Project/Java Project/User/JavaProject/lib/lib",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "C:/xampp/htdocs/JavaProject",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -62,13 +103,27 @@
       <recent name="C:\Users\Alesia\Desktop\Java Project\Java Project\User\JavaProject\inventory" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\JavaProject\src\main\resources\files" />
+      <recent name="C:\xampp\htdocs\JavaProject\src\main\java\com\electronicstore\controller" />
+      <recent name="C:\xampp\htdocs\JavaProject\src\main\java\com\electronicstore\model" />
       <recent name="C:\Users\Alesia\Desktop\Java Project\Java Project\User\JavaProject\src\com" />
       <recent name="C:\Users\Alesia\Desktop\Java Project\Java Project\User\JavaProject\src" />
-      <recent name="C:\Users\Alesia\Desktop\Java Project\Java Project\User\JavaProject\src\main\java\com\electronicstore\view" />
-      <recent name="C:\Users\Alesia\Desktop\Java Project\Java Project\User\JavaProject\src\main\java\com\electronicstore\model" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SupplierBinaryConverter">
+    <configuration name="SupplierBinaryConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.electronicstore.util.SupplierBinaryConverter" />
+      <module name="ElectronicStore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.electronicstore.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="com.electronicstore.view.LogIn" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.electronicstore.view.LogIn" />
       <module name="ElectronicStore" />
@@ -77,6 +132,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SupplierBinaryConverter" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,5 +148,20 @@
       <updated>1736277053581</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/electronicstore/view/AdministratorView.java</url>
+          <line>289</line>
+          <properties class="com.electronicstore.view.AdministratorView">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

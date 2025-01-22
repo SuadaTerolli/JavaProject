@@ -1,7 +1,8 @@
 id,name,username,datebirth,phone,email,salary,password,accesslevel
-1,John Doe,johndoe,1990-05-15,1234567890,johndoe@example.com,50000.0,hashed_password_1,manager
-2,Jane Smith,janesmith,1985-10-20,9876543210,janesmith@example.com,60000.0,hashed_password_2,administrator
-3,Emily Johnson,emilyj,1995-08-10,1122334455,emilyj@example.com,45000.0,hashed_password_3,cashier
-4,Connor Brooks,connorbrooks,1992-02-14,4285963887,connorbrooks@gmail.com,47000.0,hashed_password_4,cashier
-5,Katy Thompson,katythompson,1997-07-23,7755963288,katyt@gmail.com,54000.0,hashed_password_5,manager
-6,Peter Bryant,peterbryant,2000-01-12,1488526672,peter00@gmail.com,41000.0,hashed_password_6,cashier
+1,John Doe,johndoe,2025-01-19,885996,johndoe@gmail.com,51000.0,111,manager
+2,Jane Smith,janesmith,2025-01-19,987654,janesmith@example.com,60000.0,222,administrator
+3,Emily Johnson,emilyj,2025-01-19,112233,emilyj@example.com,45000.0,333,cashier
+4,Connor Brooks,connorbrooks,2025-01-19,428596,connorbrooks@gmail.com,47000.0,444,cashier
+5,Katy Thompson,katythompson,2025-01-19,775596,katyt@gmail.com,54000.0,555,manager
+6,Peter Bryant,peterbryant,2025-01-19,148852,peter00@gmail.com,41000.0,666,cashier
+7,Paul Evans,paulevans,2025-01-19,559684,paulevans@gmail.com,4100.0,777,Cashier

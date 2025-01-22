@@ -1,25 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager">
-    <output url="file://$MODULE_DIR$/out" />
-    <output-test url="file://$MODULE_DIR$/out" />
-    <exclude-output />
-    <content url="file://$MODULE_DIR$">
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$" dumb="true">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/untitled/src" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="openjdk-23" jdkType="JavaSDK" />
-    <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="file://$USER_HOME$/Documents/JavaFX/openjfx-23.0.1_windows-x64_bin-sdk/javafx-sdk-23.0.1/lib" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$USER_HOME$/Documents/JavaFX/openjfx-23.0.1_windows-x64_bin-sdk/javafx-sdk-23.0.1/lib" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>

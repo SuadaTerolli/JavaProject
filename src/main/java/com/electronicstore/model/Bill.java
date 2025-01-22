@@ -1,7 +1,9 @@
 package com.electronicstore.model;
 
-import java.util.Date;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+
 public class Bill {
     private int billId;
     private String billNumber;
@@ -9,10 +11,11 @@ public class Bill {
     private ArrayList<BillItem> billItems;
     private double totalAmount;
     private int sectorId;
+    private int totalQuantity; // New field
 
     public Bill() {
-        
     }
+
     public Bill(int billId, String billNumber, Date billDate, ArrayList<BillItem> billItems, double totalAmount, int sectorId) {
         this.billId = billId;
         this.billNumber = billNumber;
@@ -21,6 +24,16 @@ public class Bill {
         this.totalAmount = totalAmount;
         this.sectorId = sectorId;
     }
+
+    // New constructor matching the usage in loadBillsFromFile
+    public Bill(int billId, String billNumber, Date billDate, int totalQuantity, double totalAmount) {
+        this.billId = billId;
+        this.billNumber = billNumber;
+        this.billDate = billDate;
+        this.totalQuantity = totalQuantity;
+        this.totalAmount = totalAmount;
+    }
+
     public double calculateTotalAmount() {
         double total = 0.0;
         for (BillItem billItem : billItems) {
@@ -29,33 +42,39 @@ public class Bill {
         this.totalAmount = total;
         return total;
     }
-    public void printBill() {
-        System.out.println("Bill ID: " + billId);
-        System.out.println("Bill Number: " + billNumber);
-        System.out.println("Bill Date: " + billDate);
-        System.out.println("Sector ID: " + sectorId);
-        System.out.println("Items:");
-        for (BillItem billItem : billItems) {
-            System.out.println("- " + billItem.getItem().getName() + " Quantity: " + billItem.getItemQuantity());
-        }
-        System.out.println("Total Amount: " + totalAmount);
-    }
-    public ArrayList<Bill> getBills(int sectorId, Date startDate, Date endDate) {
-        ArrayList<Bill> bills = new ArrayList<>();
-        if (this.sectorId == sectorId && billDate.compareTo(startDate) >= 0 && billDate.compareTo(endDate) <= 0) {
-            bills.add(this);
-        }
-        return bills;
+    public String getFormattedDate() {
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        return formatter.format(this.billDate);
     }
     public void setBillItems(ArrayList<BillItem> billItems) {
         this.billItems = billItems;
+    }
+
+    public ArrayList<BillItem> getBillItems() {
+        return billItems;
+    }
+
+    public int getSectorId() {
+        return sectorId;
+    }
+
+    public String getBillNumber() {
+        return billNumber;
+    }
+
+    public double getTotalAmount() {
+        return totalAmount;
     }
 
     public int getBillId() {
         return billId;
     }
 
-    public Date getBillDate() { //I ADDED THE GETBILL METHOD CUZ I THINK I NEED IT ON THE CASHIER CLASS - A
+    public Date getBillDate() {
         return billDate;
+    }
+
+    public int getTotalQuantity() { // Getter for totalQuantity
+        return totalQuantity;
     }
 }
