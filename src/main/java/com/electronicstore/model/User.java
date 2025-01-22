@@ -7,6 +7,7 @@ public class User {
     private String name;
     private String username;
     private Date date_of_birth;
+    private int phoneNumber;
     private long phoneNumber;
     private String email;
     private double salary;
@@ -17,6 +18,7 @@ public class User {
     public User(){
 
     }
+    public User(String username,String password,String access_level)
     public User(String name,String username,String password,String access_level)
     {
         this.name=name;
@@ -24,6 +26,7 @@ public class User {
         this.password=password;
         this.access_level=access_level;
     }
+    public User(int id,String name,String username,Date date_of_birth,int phoneNumber,String email,double salary,String password,String access_level)
     public User(int id,String name,String username,Date date_of_birth,long phoneNumber,String email,double salary,String password,String access_level)
     {
         this.id=id;
@@ -65,10 +68,12 @@ public class User {
         this.date_of_birth = date_of_birth;
     }
 
+    public int getPhoneNumber() {
     public long getPhoneNumber() {
         return phoneNumber;
     }
 
+    public void setPhoneNumber(int phoneNumber) {
     public void setPhoneNumber(long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
