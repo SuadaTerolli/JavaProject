@@ -5,13 +5,20 @@ public class Supplier {
     private String name;
     private int sectorId;
 
-    public Supplier(){
+    public Supplier()
+    {
 
     }
-    public Supplier(int supplierId, String name, int sectorId){
-        this.supplierId=supplierId;
-        this.name=name;
-        this.sectorId=sectorId;
+    public Supplier(int supplierId, String name) {
+        this.supplierId = supplierId;
+        this.name = name;
+        this.sectorId = 0; // Default value
+    }
+
+    public Supplier(int supplierId, String name, int sectorId) {
+        this.supplierId = supplierId;
+        this.name = name;
+        this.sectorId = sectorId;
     }
     public String getName(){
         return name;

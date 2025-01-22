@@ -11,6 +11,7 @@ public class Item {
     private double purchasePrice;
     private double sellingPrice;
     private int quantity;
+    private int sectorId;
 
     public Item(){
 
@@ -25,6 +26,18 @@ public class Item {
         this.sellingPrice = sellingPrice;
         this.quantity = quantity;
         
+    }
+    public Item(int itemId, String name, Category category, Supplier supplier, Date purchaseDate, double purchasePrice, double sellingPrice, int quantity,int sectorId){
+        this.itemId=itemId;
+        this.name=name;
+        this.category = category;
+        this.supplier = supplier;
+        this.purchaseDate = purchaseDate;
+        this.purchasePrice = purchasePrice;
+        this.sellingPrice = sellingPrice;
+        this.quantity = quantity;
+        this.sectorId=sectorId;
+
     }
     public void reduceQuantity(int quantity){
         if (this.quantity >= quantity) {
@@ -89,4 +102,7 @@ public class Item {
         this.quantity=quantity;
     }
 
+    public void setSectorId(int sectorId) {
+        this.sectorId = sectorId;
+    }
 }

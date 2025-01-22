@@ -87,30 +87,7 @@ public class Administrator extends User {
             System.out.println("Employee with ID " + id + " not found.");
         }
     }
-    public int generateFinancialSummary(Date startDate, Date endDate)//CHECK THIS OUT IMMEDIATELY
-    {
-        double totalIncome=0.0;
-        double totalCost=0.0;
 
-        for (User employee:employees)
-        {
-            if (employee instanceof Cashier)
-            {
-                ArrayList<Bill> bills=((Cashier)employee).viewAllBills();
-                for (Bill bill:bills)
-                {
-                    if (bill.getBillDate().after(startDate)&&bill.getBillDate().before(endDate))
-                    {
-                        totalIncome+=bill.calculateTotalAmount();
-                    }
-                }
-            }
-
-        }
-        totalCost=0;
-        FinancialSummary summary=new FinancialSummary(startDate,endDate,totalIncome);
-        return 0;
-    }
 
     public User changeRoles(User user,String newRole)
     {
@@ -138,5 +115,43 @@ public class Administrator extends User {
             default:
                 return null;
         }
+    }
+    // Add this method to the Administrator class
+    public FinancialSummary generateStatistics(Date startDate, Date endDate, ArrayList<User> users, ArrayList<Item> items, ArrayList<Bill> bills) {
+        double totalIncome = 0.0;
+        double totalCosts = 0.0;
+        double salaries = 0.0;
+        double itemsPurchasedCosts = 0.0;
+
+        // Calculate total income from bills
+        for (Bill bill : bills) {
+            if (bill.getBillDate().after(startDate) && bill.getBillDate().before(endDate)) {
+                totalIncome += bill.calculateTotalAmount();
+            }
+        }
+
+        // Calculate total salaries
+        for (User user : users) {
+            salaries += user.getSalary();
+        }
+
+        // Calculate total item purchase costs
+        for (Item item : items) {
+            itemsPurchasedCosts += item.getPurchasePrice() * item.getQuantity();
+        }
+
+        // Total costs = salaries + item purchase costs
+        totalCosts = salaries + itemsPurchasedCosts;
+
+        // Create and return a FinancialSummary object
+        FinancialSummary summary = new FinancialSummary();
+        summary.setTotalIncome(totalIncome);
+        summary.setTotalCosts(totalCosts);
+        summary.setSalaries(salaries);
+        summary.setItemsPurchasedPrice(itemsPurchasedCosts);
+        summary.setStartDate(startDate);
+        summary.setEndDate(endDate);
+
+        return summary;
     }
 }

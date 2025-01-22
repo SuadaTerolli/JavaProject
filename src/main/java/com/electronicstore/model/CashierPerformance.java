@@ -2,30 +2,44 @@ package com.electronicstore.model;
 
 import java.io.Serializable;
 
-public class CashierPerformance implements Serializable {
+public class CashierPerformance {
+    private final String cashierId;
     private int totalBills;
     private int itemsSold;
     private double totalRevenue;
 
-    // Getters and Setters
-    public int getTotalBills() { return totalBills; }
-    public void setTotalBills(int totalBills) { this.totalBills = totalBills; }
-    public int getItemsSold() { return itemsSold; }
-    public void setItemsSold(int itemsSold) { this.itemsSold = itemsSold; }
-    public double getTotalRevenue() { return totalRevenue; }
-    public void setTotalRevenue(double totalRevenue) { this.totalRevenue = totalRevenue; }
+    public CashierPerformance(String cashierId) {
+        this.cashierId = cashierId;
+        this.totalBills = 0;
+        this.itemsSold = 0;
+        this.totalRevenue = 0.0;
+    }
 
-    // Static Method to Calculate Performance
-    public static CashierPerformance calculatePerformance(String cashierName, String timePeriod) {
-        CashierPerformance performance = new CashierPerformance();
+    public String getCashierId() {
+        return cashierId;
+    }
 
-        // Replace with SQLite queries using your database integration
-        // Example pseudo-code:
-        // String query = "SELECT COUNT(bill_id), SUM(items_sold), SUM(revenue) FROM Bills WHERE cashier_name = ? AND time_period = ?";
-        // PreparedStatement statement = connection.prepareStatement(query);
-        // ResultSet result = statement.executeQuery();
-        // if (result.next()) { performance.setTotalBills(result.getInt(1)); performance.setItemsSold(result.getInt(2)); performance.setTotalRevenue(result.getDouble(3)); }
+    public int getTotalBills() {
+        return totalBills;
+    }
 
-        return performance;
+    public void incrementBills() {
+        this.totalBills++;
+    }
+
+    public int getItemsSold() {
+        return itemsSold;
+    }
+
+    public void addItemsSold(int items) {
+        this.itemsSold += items;
+    }
+
+    public double getTotalRevenue() {
+        return totalRevenue;
+    }
+
+    public void addRevenue(double revenue) {
+        this.totalRevenue += revenue;
     }
 }
